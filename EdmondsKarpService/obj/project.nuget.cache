@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LdQDT2ZjFrMWPtWcD5zZgunDOCeF3uNE0B7eZjuUIbwz9sn4uW/tU5XQA3NvSqm51mLHE1EXhOIsbNE8y19rUw==",
+  "dgSpecHash": "suqesaP62iAGHv3JEwb9ptsPvVqw8vlFHgANeCBkVsZlsWncad+OnkvMlFy6FW+Oj+uGCKj/fqz4EDzk9gCg9Q==",
   "success": true,
-  "projectFilePath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\GraphService\\GraphService.csproj",
+  "projectFilePath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\EdmondsKarpService\\EdmondsKarpService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\weron\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\weron\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

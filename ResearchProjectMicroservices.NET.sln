@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphService", "GraphService\GraphService.csproj", "{39582E99-0A52-4BB4-9F68-8B2D93F23C51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdmondsKarpService", "EdmondsKarpService\EdmondsKarpService.csproj", "{E1E8D71D-E9F8-4F56-B9B8-F32596071FBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BFSService", "BFSService\BFSService.csproj", "{E8BC3F38-4116-454F-99A3-BB1DD2E9FD2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{39582E99-0A52-4BB4-9F68-8B2D93F23C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39582E99-0A52-4BB4-9F68-8B2D93F23C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39582E99-0A52-4BB4-9F68-8B2D93F23C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1E8D71D-E9F8-4F56-B9B8-F32596071FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1E8D71D-E9F8-4F56-B9B8-F32596071FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1E8D71D-E9F8-4F56-B9B8-F32596071FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1E8D71D-E9F8-4F56-B9B8-F32596071FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BC3F38-4116-454F-99A3-BB1DD2E9FD2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BC3F38-4116-454F-99A3-BB1DD2E9FD2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BC3F38-4116-454F-99A3-BB1DD2E9FD2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BC3F38-4116-454F-99A3-BB1DD2E9FD2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

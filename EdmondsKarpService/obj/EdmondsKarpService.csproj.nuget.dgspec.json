@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\GraphService\\GraphService.csproj": {}
+    "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\EdmondsKarpService\\EdmondsKarpService.csproj": {}
   },
   "projects": {
-    "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\GraphService\\GraphService.csproj": {
+    "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\EdmondsKarpService\\EdmondsKarpService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\GraphService\\GraphService.csproj",
-        "projectName": "GraphService",
-        "projectPath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\GraphService\\GraphService.csproj",
+        "projectUniqueName": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\EdmondsKarpService\\EdmondsKarpService.csproj",
+        "projectName": "EdmondsKarpService",
+        "projectPath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\EdmondsKarpService\\EdmondsKarpService.csproj",
         "packagesPath": "C:\\Users\\weron\\.nuget\\packages\\",
-        "outputPath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\GraphService\\obj\\",
+        "outputPath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\EdmondsKarpService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
