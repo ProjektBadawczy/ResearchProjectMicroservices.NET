@@ -1,42 +1,19 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/edmondsKarp",
+      "DownstreamPathTemplate": "/graph/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5001
+          "Host": "graph-service",
+          "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/api/edmondsKarp",
-      "UpstreamHttpMethod": ["Get"]
-    },
-    {
-      "DownstreamPathTemplate": "/api/bfs",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5001
-        }
-      ],
-      "UpstreamPathTemplate": "/api/bfs",
-      "UpstreamHttpMethod": ["Get"]
-    },
-    {
-      "DownstreamPathTemplate": "/api/graph",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "localhost",
-          "Port": 5003
-        }
-      ],
-      "UpstreamPathTemplate": "/api/graph",
-      "UpstreamHttpMethod": ["Get"]
+      "UpstreamPathTemplate": "/graph/{everything}",
+      "UpstreamHttpMethod": ["GET"]
     }
   ],
   "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:8001"
   }
 }

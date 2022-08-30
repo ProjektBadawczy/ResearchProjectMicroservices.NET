@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GraphService.Controllers
 {
     [ApiController]
+    [Route("graph")]
     public class GraphController : ControllerBase
     {
         private IGraphService _graphService;
@@ -14,8 +15,7 @@ namespace GraphService.Controllers
             _graphService = graphService;
         }
         
-        [HttpGet]
-        [Route("/api/graph")]
+        [HttpGet("{id:int}")]
         public ActionResult<Graph> GetGraph([FromQuery] int id)
         {
             Graph graph = _graphService.getGraph(id);

@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    ports:
+      - 8001:80
+
+  graph-service:
+    container_name: graph-service
+    build:
+      context: .
+      dockerfile: GraphService/Dockerfile
