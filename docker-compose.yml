@@ -15,3 +15,21 @@ services:
     build:
       context: .
       dockerfile: GraphService/Dockerfile
+    ports:
+      - 5001:80
+      
+  edmonds-karp-service:
+    container_name: edmonds-karp-service
+    build:
+      context: .
+      dockerfile: EdmondsKarpService/Dockerfile
+    ports:
+      - 5002:80
+          
+  bfs-service:
+    container_name: bfs-service
+    build:
+      context: .
+      dockerfile: BFSService/Dockerfile
+    ports:
+      - 5003:80

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.Json.Serialization;
 
-namespace GraphService.Models
+namespace EdmondsKarpService.Models
 {
     [Serializable]
     public class Graph : ICloneable

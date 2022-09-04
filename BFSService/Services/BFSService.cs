@@ -1,19 +1,18 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using BFSService.Models;
-using GraphService.Models;
 
 namespace BFSService.Services
 {
-    public interface IBfSservice
+    public interface IBfService
     {
-        public BFSResult Bfs(Graph graph, int source, int t);
+        public BFSResult Bfs(Graph? graph, int source, int t);
 
     }
     
-    public class BfSservice: IBfSservice
+    public class BfService: IBfService
     {
-        public BFSResult Bfs(Graph graph, int source, int t)
+        public BFSResult Bfs(Graph? graph, int source, int t)
         {
             int numberOfVertices = graph.NumberOfVertices;
             int[] parent = new int[numberOfVertices];

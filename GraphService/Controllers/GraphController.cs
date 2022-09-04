@@ -15,7 +15,7 @@ namespace GraphService.Controllers
             _graphService = graphService;
         }
         
-        [HttpGet("{id:int}")]
+        [HttpGet]
         public ActionResult<Graph> GetGraph([FromQuery] int id)
         {
             Graph graph = _graphService.getGraph(id);

@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/graph/{everything}",
+      "DownstreamPathTemplate": "/graph?id={id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,7 +9,31 @@
           "Port": 80
         }
       ],
-      "UpstreamPathTemplate": "/graph/{everything}",
+      "UpstreamPathTemplate": "/graph?id={id}",
+      "UpstreamHttpMethod": ["GET"]
+    },
+    {
+      "DownstreamPathTemplate": "/edmondsKarpMaxGraphFlow?id={id}&source={source}&destination={destination}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "edmonds-karp-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/edmondsKarpMaxGraphFlow?id={id}&source={source}&destination={destination}",
+      "UpstreamHttpMethod": ["GET"]
+    },
+    {
+      "DownstreamPathTemplate": "/bfs?graph={graph}&source={source}&destination={destination}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "bfs-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/bfs?graph={graph}&source={source}&destination={destination}",
       "UpstreamHttpMethod": ["GET"]
     }
   ],
