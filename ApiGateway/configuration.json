@@ -5,8 +5,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "graph-service",
-          "Port": 80
+          "Host": "localhost",
+          "Port": 5001
         }
       ],
       "UpstreamPathTemplate": "/graph?id={id}",
@@ -17,24 +17,24 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "edmonds-karp-service",
-          "Port": 80
+          "Host": "localhost",
+          "Port": 5002
         }
       ],
       "UpstreamPathTemplate": "/edmondsKarpMaxGraphFlow?id={id}&source={source}&destination={destination}",
       "UpstreamHttpMethod": ["GET"]
     },
     {
-      "DownstreamPathTemplate": "/bfs?graph={graph}&source={source}&destination={destination}",
+      "DownstreamPathTemplate": "/bfs",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "bfs-service",
-          "Port": 80
+          "Host": "localhost",
+          "Port": 5003
         }
       ],
-      "UpstreamPathTemplate": "/bfs?graph={graph}&source={source}&destination={destination}",
-      "UpstreamHttpMethod": ["GET"]
+      "UpstreamPathTemplate": "/bfs",
+      "UpstreamHttpMethod": ["POST"]
     }
   ],
   "GlobalConfiguration": {

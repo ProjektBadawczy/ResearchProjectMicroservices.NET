@@ -6,15 +6,15 @@ namespace BFSService.Services
 {
     public interface IBfService
     {
-        public BFSResult Bfs(Graph? graph, int source, int t);
+        public BFSResult Bfs(GraphForBFS graphForBFS);
 
     }
     
     public class BfService: IBfService
     {
-        public BFSResult Bfs(Graph? graph, int source, int t)
+        public BFSResult Bfs(GraphForBFS graphForBFS)
         {
-            int numberOfVertices = graph.NumberOfVertices;
+            int numberOfVertices = graphForBFS.NumberOfVertices;
             int[] parent = new int[numberOfVertices];
             bool[] visited = new bool[numberOfVertices];
 
@@ -24,9 +24,9 @@ namespace BFSService.Services
             }
 
             LinkedList<int> queue = new LinkedList<int>();
-            queue.AddLast(source);
-            visited[source] = true;
-            parent[source] = -1;
+            queue.AddLast(graphForBFS.Source);
+            visited[graphForBFS.Source] = true;
+            parent[graphForBFS.Source] = -1;
 
             while (queue.Count != 0)
             {
@@ -34,7 +34,7 @@ namespace BFSService.Services
                 queue.RemoveFirst();
                 for (int v = 0; v < numberOfVertices; v++)
                 {
-                    if (!visited[v] && graph.AdjacencyMatrix[u][v] > 0)
+                    if (!visited[v] && graphForBFS.AdjacencyMatrix[u][v] > 0)
                     {
                         queue.AddLast(v);
                         parent[v] = u;
@@ -42,8 +42,7 @@ namespace BFSService.Services
                     }
                 }
             }
-
-            return new BFSResult(parent, visited[t]);
+            return new BFSResult(parent, visited[graphForBFS.Destination]);
         }
         
     }

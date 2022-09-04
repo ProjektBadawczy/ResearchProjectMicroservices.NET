@@ -21,35 +21,23 @@ namespace BFSService.Controllers
             _bfSservice = bfSservice;
         }
         
-        [HttpGet]
-        public async Task<ActionResult<BFSResult>> Bfs([FromQuery] GraphParametersFlow graphParametersFlow)
+        [HttpPost]
+        public async Task<ActionResult<BFSResult>> Bfs([FromBody] GraphForBFS graphForBFS)
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, $"http://graph-service:80/graph?id={graphParametersFlow.graph.Id}");
-            var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.SendAsync(request);
-
-            if (responseMessage.IsSuccessStatusCode)
+            if (graphForBFS == null)
             {
-                using var contentStream = await responseMessage.Content.ReadAsStreamAsync();
-                Graph? graph = await JsonSerializer.DeserializeAsync<Graph>(contentStream);
-                if (graph == null)
-                {
-                    return NotFound();
-                }
-                if (!areSourceAndGraphParametersValid(graph, graphParametersFlow.source, graphParametersFlow.destination))
-                {
-                    throw new Exception($"Invalid source or destination parameter!\n " +
-                                        $"Number of vertices: {graph.NumberOfVertices}\n " +
-                                        $"Source: {graphParametersFlow.source}\n Destination: {graphParametersFlow.destination}\n");
-                }
-
-                return _bfSservice.Bfs(graph, graphParametersFlow.source, graphParametersFlow.destination);
+                return NotFound();
             }
-
-            return NotFound();
+            if (!areSourceAndGraphParametersValid(graphForBFS, graphForBFS.Source, graphForBFS.Destination))
+            {
+                throw new Exception($"Invalid source or destination parameter!\n " +
+                                    $"Number of vertices: {graphForBFS.NumberOfVertices}\n " +
+                                    $"Source: {graphForBFS.Source}\n Destination: {graphForBFS.Destination}\n");
+            }
+            return _bfSservice.Bfs(graphForBFS);
         }
         
-        private bool areSourceAndGraphParametersValid(Graph? graph, int source, int destination) {
+        private bool areSourceAndGraphParametersValid(GraphForBFS? graph, int source, int destination) {
             return source >= 0 && source < graph.NumberOfVertices && destination >= 0 && destination < graph.NumberOfVertices;
         }
     }

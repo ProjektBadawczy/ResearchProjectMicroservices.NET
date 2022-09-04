@@ -1,8 +1,8 @@
 ﻿namespace EdmondsKarpService.Models
 {
-    public class GraphParametersFlow
+    public class GraphParametersFlowWithId
     {
-        public Graph graph { get; set; }
+        public int id { get; set; }
         
         public int source { get; set; }
         
