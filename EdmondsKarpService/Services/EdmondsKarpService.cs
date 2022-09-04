@@ -28,7 +28,7 @@ namespace EdmondsKarpService.Services
         public async Task<int> CalculateMaxFlow(int id, int source, int destination)
         {
             var client = _httpClientFactory.CreateClient();
-            var requestGraph = new HttpRequestMessage(HttpMethod.Get, $"http://localhost:5001/graph?id={id}");
+            var requestGraph = new HttpRequestMessage(HttpMethod.Get, $"http://graph-service:80/graph?id={id}");
             var responseGraph = await client.SendAsync(requestGraph);
 
             if (responseGraph.IsSuccessStatusCode)
@@ -38,7 +38,7 @@ namespace EdmondsKarpService.Services
                 GraphForBFS graphForBfs = new GraphForBFS(graph.Id, graph.NumberOfVertices, graph.AdjacencyMatrix,
                     source, destination);
 
-                var requestBFS = $"http://localhost:5003/bfs";
+                var requestBFS = "http://bfs-service:80/bfs";
                 var httpContent = new StringContent(JsonSerializer.Serialize(graphForBfs), Encoding.UTF8,
                     MediaTypeNames.Application.Json);
                 var responseBFS = await client.PostAsync(requestBFS, httpContent);

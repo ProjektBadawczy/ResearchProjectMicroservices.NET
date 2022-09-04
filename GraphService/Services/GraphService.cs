@@ -33,7 +33,7 @@ namespace GraphService.Services
                 new[] {0, 0, 0, 7, 0, 4},
                 new[] {0, 0, 0, 0, 0, 0}
             };
-            Graph graph = new Graph(1, 6, adjMatrix);
+            Graph graph = new Graph(0, 6, adjMatrix);
             graphs.Add(graph);
             
             int vertices = 6;

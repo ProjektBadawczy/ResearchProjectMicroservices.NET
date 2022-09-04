@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Net.Http;
-using System.Text.Json;
 using System.Threading.Tasks;
 using BFSService.Models;
 using BFSService.Services;
-using EdmondsKarpService.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BFSService.Controllers
@@ -14,7 +12,6 @@ namespace BFSService.Controllers
     public class BFSController : ControllerBase
     {
         private IBfService _bfSservice;
-        private readonly IHttpClientFactory _httpClientFactory;
 
         public BFSController(IBfService bfSservice)
         {
