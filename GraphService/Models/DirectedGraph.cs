@@ -13,10 +13,10 @@ namespace GraphService.Models
         public int Id { get; set; }
         
         [JsonPropertyName("vertices")]
-        public int Vertices;
+        public int Vertices { get; set; }
         
         [JsonPropertyName("adjacencyList")]
-        public readonly List<List<Vertex>> AdjacencyList;
+        public List<List<Vertex>> AdjacencyList { get; set; }
 
         public DirectedGraph(int vertices, int id)
         {
