@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace GraphService.Models
+
+namespace PushRelabelService.Models
 {
     // DirectedGraph class explained above
     [Serializable]
     public class DirectedGraph
     {
-
         [JsonPropertyName("id")]
         public int Id { get; set; }
         
@@ -17,7 +17,7 @@ namespace GraphService.Models
         
         [JsonPropertyName("adjacencyList")]
         public readonly List<List<Vertex>> AdjacencyList;
-
+        
         public DirectedGraph(int vertices, int id)
         {
             Id = id;

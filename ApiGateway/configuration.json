@@ -13,6 +13,18 @@
       "UpstreamHttpMethod": ["GET"]
     },
     {
+      "DownstreamPathTemplate": "/directedGraph?id={id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "graph-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/directedGraph?id={id}",
+      "UpstreamHttpMethod": ["GET"]
+    },
+    {
       "DownstreamPathTemplate": "/edmondsKarpMaxGraphFlow?id={id}&source={source}&destination={destination}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -35,6 +47,18 @@
       ],
       "UpstreamPathTemplate": "/bfs",
       "UpstreamHttpMethod": ["POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/pushRelabelMaxGraphFlow?id={id}&source={source}&destination={destination}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "push-relabel-service",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/pushRelabelMaxGraphFlow?id={id}&source={source}&destination={destination}",
+      "UpstreamHttpMethod": ["GET"]
     }
   ],
   "GlobalConfiguration": {
