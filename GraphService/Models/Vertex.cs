@@ -7,8 +7,8 @@
         // weight or capacity
         // associated with the edge
 
-        public int i;
-        public int w;
+        public int i { get; set; }
+        public int w { get; set; }
 
         public Vertex(int i, int w)
         {
