@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "L/XLLdSPTbs+i/nPpXmAzuJdwmaM6XBpCFYmWmsKfQM=",
+  "Source": "PushRelabelService",
+  "BasePath": "_content/PushRelabelService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

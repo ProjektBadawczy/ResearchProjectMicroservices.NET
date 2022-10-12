@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "lXmB5F9zs6K6E9irnCGRs+N6oFQWNVY6ytrxsW24xXylA/8h5PnBPIrKYNqHSXN3ZWlQ0xxwM/mgKSCg9Ong6w==",
+  "success": true,
+  "projectFilePath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\PushRelabelService\\PushRelabelService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\weron\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\weron\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\weron\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\weron\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\weron\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\weron\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

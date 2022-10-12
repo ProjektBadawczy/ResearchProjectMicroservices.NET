@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vMYMi7fRt2t6PlIDgvItoQ2o6J9KE4zJHFH9dTVO+OE=",
+  "Source": "BFSService",
+  "BasePath": "_content/BFSService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
