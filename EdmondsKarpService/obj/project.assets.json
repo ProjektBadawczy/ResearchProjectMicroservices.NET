@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "CommonModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CommonModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonModels.dll": {}
+        }
       }
     }
   },
@@ -216,10 +226,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "CommonModels/1.0.0": {
+      "type": "project",
+      "path": "../CommonModels/CommonModels.csproj",
+      "msbuildProject": "../CommonModels/CommonModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CommonModels >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -253,7 +269,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\CommonModels\\CommonModels.csproj": {
+              "projectPath": "D:\\Studia- informatyka\\II-stopień\\semestr 1\\Projekt badawczy\\ResearchProjectMicroservices.NET\\CommonModels\\CommonModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

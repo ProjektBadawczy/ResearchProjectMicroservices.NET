@@ -9,6 +9,8 @@ D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMic
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\bin\Debug\net6.0\CommonModels.dll
+D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\bin\Debug\net6.0\CommonModels.pdb
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\obj\Debug\net6.0\PushRelabelService.csproj.AssemblyReference.cache
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\obj\Debug\net6.0\PushRelabelService.GeneratedMSBuildEditorConfig.editorconfig
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\PushRelabelService\obj\Debug\net6.0\PushRelabelService.AssemblyInfoInputs.cache

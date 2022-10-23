@@ -1,4 +1,4 @@
-﻿using GraphService.Models;
+﻿using CommonModels;
 using GraphService.Services;
 using Microsoft.AspNetCore.Mvc;
 

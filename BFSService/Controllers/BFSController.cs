@@ -1,8 +1,5 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using BFSService.Models;
-using BFSService.Services;
+﻿using BFSService.Services;
+using CommonModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BFSService.Controllers

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Net.Http;
-using System.Net.Mime;
+﻿using System.Net.Mime;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
-using BFSService.Models;
-using EdmondsKarpService.Models;
+using CommonModels;
 
 namespace EdmondsKarpService.Services
 {

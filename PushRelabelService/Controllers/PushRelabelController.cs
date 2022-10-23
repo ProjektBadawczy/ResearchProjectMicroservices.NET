@@ -1,6 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using CommonModels;
 using Microsoft.AspNetCore.Mvc;
-using PushRelabelService.Models;
 using PushRelabelService.Services;
 
 namespace PushRelabelService.Controllers

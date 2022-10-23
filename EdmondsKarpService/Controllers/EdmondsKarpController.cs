@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Net.Http;
-using System.Text.Json;
-using System.Threading.Tasks;
-using EdmondsKarpService.Models;
+﻿using CommonModels;
 using EdmondsKarpService.Services;
 using Microsoft.AspNetCore.Mvc;
 

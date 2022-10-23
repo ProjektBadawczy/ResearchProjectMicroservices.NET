@@ -5,8 +5,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5001
+          "Host": "graph-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/graph?id={id}",
@@ -17,8 +17,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5001
+          "Host": "graph-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/directedGraph?id={id}",
@@ -29,8 +29,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5002
+          "Host": "edmonds-karp-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/edmondsKarpMaxGraphFlow?id={id}&source={source}&destination={destination}",
@@ -41,8 +41,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5003
+          "Host": "bfs-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/bfs",
@@ -53,8 +53,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5004
+          "Host": "push-relabel-service",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/pushRelabelMaxGraphFlow?id={id}&source={source}&destination={destination}",

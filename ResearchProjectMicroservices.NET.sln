@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushRelabelService", "PushRelabelService\PushRelabelService.csproj", "{E0F7DBE1-E591-4069-BB64-2AAC48F68667}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonModels", "CommonModels\CommonModels.csproj", "{9449106A-6EDD-4411-A868-1AE8B6D7BCCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{E0F7DBE1-E591-4069-BB64-2AAC48F68667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0F7DBE1-E591-4069-BB64-2AAC48F68667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0F7DBE1-E591-4069-BB64-2AAC48F68667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9449106A-6EDD-4411-A868-1AE8B6D7BCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9449106A-6EDD-4411-A868-1AE8B6D7BCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9449106A-6EDD-4411-A868-1AE8B6D7BCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9449106A-6EDD-4411-A868-1AE8B6D7BCCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

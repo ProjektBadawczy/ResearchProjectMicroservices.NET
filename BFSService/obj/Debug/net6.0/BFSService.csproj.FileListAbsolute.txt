@@ -9,6 +9,8 @@ D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMic
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\bin\Debug\net6.0\CommonModels.dll
+D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\bin\Debug\net6.0\CommonModels.pdb
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\obj\Debug\net6.0\BFSService.csproj.AssemblyReference.cache
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\obj\Debug\net6.0\BFSService.GeneratedMSBuildEditorConfig.editorconfig
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\BFSService\obj\Debug\net6.0\BFSService.AssemblyInfoInputs.cache

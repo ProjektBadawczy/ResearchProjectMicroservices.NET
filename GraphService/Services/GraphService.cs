@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using GraphService.Models;
+﻿using CommonModels;
+
 
 namespace GraphService.Services
 {
