@@ -3,7 +3,7 @@
 namespace CommonModels;
 
 [Serializable]
-public class GraphForBFS : ICloneable
+public class GraphForBFS
 {
     [JsonPropertyName("id")] public int Id { get; set; }
 
@@ -24,9 +24,15 @@ public class GraphForBFS : ICloneable
         Destination = destination;
     }
 
-    public object Clone()
+    public object DeepCopy()
     {
-        return (GraphForBFS)MemberwiseClone();
+        GraphForBFS graph = (GraphForBFS)MemberwiseClone();
+        graph.Id = Id;
+        graph.NumberOfVertices = NumberOfVertices;
+        graph.AdjacencyMatrix = AdjacencyMatrix.Select(a => a.ToArray()).ToArray();
+        graph.Source = Source;
+        graph.Destination = Destination;
+        return graph;
     }
 
 }

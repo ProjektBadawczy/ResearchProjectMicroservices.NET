@@ -1,3 +1,4 @@
+using GraphService.Repositories;
 using GraphService.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +13,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<GraphRepository>();
 builder.Services.AddScoped<IGraphService, GraphService.Services.GraphService>();
 
 var app = builder.Build();

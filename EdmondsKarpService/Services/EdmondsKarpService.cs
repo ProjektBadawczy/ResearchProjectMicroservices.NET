@@ -45,7 +45,7 @@ namespace EdmondsKarpService.Services
                     BFSResult bfsResult = await JsonSerializer.DeserializeAsync<BFSResult>(contentStreamBFS);
 
                     int u, v;
-                    GraphForBFS residualGraph = (GraphForBFS) graphForBfs.Clone();
+                    GraphForBFS residualGraph = (GraphForBFS) graphForBfs.DeepCopy();
                     int maxFlow = 0;
 
                     while (bfsResult.Success)
