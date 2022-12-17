@@ -1,5 +1,6 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
+EXPOSE 8001
 EXPOSE 80
 EXPOSE 443
 
@@ -18,3 +19,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ApiGateway.dll"]
+ENV ASPNETCORE_URLS=http://+:8001

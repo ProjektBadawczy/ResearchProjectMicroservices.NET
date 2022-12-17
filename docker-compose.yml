@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: ApiGateway/Dockerfile
     ports:
-      - 8001:80
+      - 8001:8001
 
   graph-service:
     container_name: graph-service
