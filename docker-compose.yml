@@ -1,44 +1,54 @@
 version: "3.8"
 
 services:
+
+  traefik:
+    image: traefik:latest
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:8001"
+    ports:
+      - "80:80"
+      - "8001:8001"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      
   graph-service:
     build:
       context: .
       dockerfile: GraphService/Dockerfile
-    networks:
-      - microservices-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.graph-service.rule=Host(`localhost`) && Path(`/graph`)"
+      - "traefik.http.routers.graph-service.entrypoints=web"
 
       
   edmonds-karp-service:
     build:
       context: .
       dockerfile: EdmondsKarpService/Dockerfile
-    networks:
-      - microservices-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.edmonds-karp-service.rule=Host(`localhost`) && Path(`/edmondsKarpMaxGraphFlow`)"
+      - "traefik.http.routers.edmonds-karp-service.entrypoints=web"
           
   bfs-service:
     build:
       context: .
       dockerfile: BFSService/Dockerfile
-    networks:
-      - microservices-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bfs-service.rule=Host(`localhost`) && Path(`/bfs`)"
+      - "traefik.http.routers.bfs-service.entrypoints=web"
 
   push-relabel-service:
     build:
       context: .
       dockerfile: PushRelabelService/Dockerfile
-    networks:
-      - microservices-network
-      
-  nginx:
-    image: nginx:latest
-    container_name: nginx
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-    networks:
-      - microservices-network
-    ports:
-      - 8001:80
-     
-networks:
-  microservices-network:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.push-relabel-service.rule=Host(`localhost`) && Path(`/pushRelabelMaxGraphFlow`)"
+      - "traefik.http.routers.push-relabel-service.entrypoints=web"
