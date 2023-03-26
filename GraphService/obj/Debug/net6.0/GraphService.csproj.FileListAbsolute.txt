@@ -27,8 +27,4 @@ D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMic
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\obj\Debug\net6.0\GraphService.pdb
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\obj\Debug\net6.0\GraphService.genruntimeconfig.cache
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\obj\Debug\net6.0\ref\GraphService.dll
-D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\bin\Debug\net6.0\Resources\big_dense_set.json
-D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\bin\Debug\net6.0\Resources\big_sparse_set.json
 D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\bin\Debug\net6.0\Resources\random_set.json
-D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\bin\Debug\net6.0\Resources\small_dense_set.json
-D:\Studia- informatyka\II-stopień\semestr 1\Projekt badawczy\ResearchProjectMicroservices.NET\GraphService\bin\Debug\net6.0\Resources\small_sparse_set.json
