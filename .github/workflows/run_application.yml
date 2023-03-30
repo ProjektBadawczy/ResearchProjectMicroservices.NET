@@ -41,3 +41,12 @@ jobs:
         uses: whatnick/wait-action@master
         with:
           time: '600s'
+          
+      - name: docker-compose down
+        uses: appleboy/ssh-action@master
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          host: ${{ secrets.AWS_APPLICATION_DNS }}
+          username: ec2-user
+          port: 22 
+          script: docker-compose down
