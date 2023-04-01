@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Clean workscape
+        uses: AutoModality/action-clean@v1
+        
       - name: Checkout the files
         uses: actions/checkout@v2
 
