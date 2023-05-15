@@ -1,0 +1,71 @@
+version: "3.8"
+
+services:
+  traefik:
+    image: traefik:latest
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.swarmmode=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:8001"
+      - "--log.level=DEBUG"
+    networks:
+      - proxy
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+    ports:
+      - "80:80"
+      - "8001:8001"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      
+  graph-service:
+    image: weronikapiotrowska/net-graph-service
+    networks:
+      - proxy
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.graph-service.rule=Path(`/graph`)"
+        - "traefik.http.routers.graph-service.entrypoints=web"
+        - "traefik.http.services.graph-service.loadbalancer.server.port=80"
+
+  bfs-service:
+    image: weronikapiotrowska/net-bfs-service
+    networks:
+      - proxy
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.bfs-service.rule=Path(`/bfs`)"
+        - "traefik.http.routers.bfs-service.entrypoints=web"
+        - "traefik.http.services.bfs-service.loadbalancer.server.port=80"
+
+  edmonds-karp-service:
+    image: weronikapiotrowska/net-edmonds-karp-service
+    networks:
+      - proxy
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.edmonds-karp-service.rule=Path(`/edmondsKarpMaxGraphFlow`)"
+        - "traefik.http.routers.edmonds-karp-service.entrypoints=web"
+        - "traefik.http.services.edmonds-karp-service.loadbalancer.server.port=80"
+
+  push-relabel-service:
+    image: weronikapiotrowska/net-push-relabel-service
+    networks:
+      - proxy
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.push-relabel-service.rule=Path(`/pushRelabelMaxGraphFlow`)"
+        - "traefik.http.routers.push-relabel-service.entrypoints=web"
+        - "traefik.http.services.push-relabel-service.loadbalancer.server.port=80"
+
+networks:
+  proxy:
+    driver: overlay 
