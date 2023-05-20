@@ -1,10 +1,10 @@
-name: "Run application"
+name: "Run application in swarm"
 
 on: workflow_dispatch
 
 jobs:
   run_application:
-    name: Run application
+    name: Run application in swarm
     runs-on: ubuntu-latest
 
     steps:
