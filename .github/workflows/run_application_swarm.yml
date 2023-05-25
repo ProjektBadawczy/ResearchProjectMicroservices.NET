@@ -1,0 +1,23 @@
+name: "Run application in swarm"
+
+on: workflow_dispatch
+
+jobs:
+  run_application:
+    name: Run application in swarm
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clean workscape
+        uses: AutoModality/action-clean@v1
+        
+      - name: Checkout the files
+        uses: actions/checkout@v2
+
+      - name: Connect to AWS EC2
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.AWS_APPLICATION_DNS }}
+          REMOTE_USER: ec2-user
+          TARGET: /home/ec2-user
