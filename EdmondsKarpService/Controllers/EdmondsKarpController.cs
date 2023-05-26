@@ -17,9 +17,9 @@ namespace EdmondsKarpService.Controllers
         }
 
         [HttpGet]
-        public ActionResult<int> GetEdmondsKarpMaxGraphFlow([FromQuery] GraphParametersFlowWithId graphParametersFlowWithId)
+        public async Task<ActionResult<int>> GetEdmondsKarpMaxGraphFlow([FromQuery] GraphParametersFlowWithId graphParametersFlowWithId)
         {
-            int maxFlow = _edmondsKarpService.CalculateMaxFlow(graphParametersFlowWithId.id, graphParametersFlowWithId.source,
+            int maxFlow = await _edmondsKarpService.CalculateMaxFlow(graphParametersFlowWithId.id, graphParametersFlowWithId.source, 
                 graphParametersFlowWithId.destination);
 
             return maxFlow;

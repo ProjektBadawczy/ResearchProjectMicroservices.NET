@@ -16,7 +16,7 @@ namespace BFSService.Controllers
         }
         
         [HttpPost]
-        public ActionResult<BFSResult> Bfs([FromBody] GraphForBFS graphForBFS)
+        public async Task<ActionResult<BFSResult>> Bfs([FromBody] GraphForBFS graphForBFS)
         {
             if (graphForBFS == null)
             {
